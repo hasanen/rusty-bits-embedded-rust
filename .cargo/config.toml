@@ -1,0 +1,14 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+runner = 'probe-rs run --chip nRF51822_xxAA --protocol swd'
+rustflags = [
+  "-C", "linker=flip-link",
+  "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=-Tdefmt.x",
+]
+
+# Enable printing of defmt debug, info and warning messages by default
+[env]
+DEFMT_LOG="debug"
