@@ -130,6 +130,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8d5439c4ad607c3c23abf66de8c8bf57ba8adcd1f129e699851a6e43935d339d"
 
 [[package]]
+name = "nrf51-pac"
+version = "0.12.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "137f187dc6ee482e27312086bd3c3a83e1c273512782cf131a61957f72fc4219"
+dependencies = [
+ "cortex-m",
+ "vcell",
+]
+
+[[package]]
 name = "panic-halt"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -204,6 +214,7 @@ dependencies = [
  "cortex-m-rt",
  "defmt",
  "defmt-rtt",
+ "nrf51-pac",
  "panic-halt",
  "rtt-target",
 ]
