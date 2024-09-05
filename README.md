@@ -9,4 +9,4 @@ Going to link videos here, which I've done so far, just to keep track
   - Also needed to add `defmt` and `defmt-rtt` crates
   - macos gdb: `brew install arm-non-eabi-gdb`
 - Blinking a LED: https://www.youtube.com/watch?v=A9wvA_S6m7Y
-  -Some adjustemnts needed for micro:bit v1.5
+  - Some adjustemnts needed for micro:bit v1.5
