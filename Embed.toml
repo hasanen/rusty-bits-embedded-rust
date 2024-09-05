@@ -5,7 +5,7 @@ chip = "nRF51822_xxAA"
 enabled = false
 
 [default.gdb]
-enabled = true
+enabled = false
 
 [default.reset]
 halt_afterwards = true
